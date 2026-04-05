@@ -1,0 +1,163 @@
+/* DevMental Website — Design Tokens & Styles */
+:root {
+    --dm-royal-blue: #4169e1;
+    --dm-dark: #232323;
+    --dm-tile-alt: whitesmoke;
+    --dm-shadow: rgba(50, 75, 152, 0.58);
+    --dm-font-body: 'Century Gothic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --dm-font-heading: 'Segoe UI', sans-serif;
+}
+
+body {
+    font-family: var(--dm-font-body);
+    margin: 0;
+    padding-top: 56px; /* navbar height */
+}
+
+/* Navbar */
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+/* Hero */
+.hero {
+    background-color: var(--dm-royal-blue);
+    color: white;
+    padding: 3rem 0;
+}
+
+.hero h1 {
+    font-family: var(--dm-font-heading);
+    font-weight: 300;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero .lead {
+    font-family: var(--dm-font-heading);
+    font-weight: 300;
+    font-size: 1.15rem;
+    opacity: 0.9;
+}
+
+.hero .feature-list {
+    list-style: none;
+    padding: 0;
+    line-height: 2.2;
+    font-size: 1.05rem;
+}
+
+.hero .feature-list .bi {
+    margin-right: 0.4rem;
+    color: rgba(255,255,255,0.85);
+}
+
+.hero-img {
+    max-width: 100%;
+    box-shadow: 5px 5px 12px var(--dm-shadow);
+    border-radius: 4px;
+}
+
+/* Tiles */
+.tile-light {
+    padding: 3rem 0;
+    background-color: white;
+}
+
+.tile-dark {
+    padding: 3rem 0;
+    background-color: var(--dm-tile-alt);
+}
+
+.tile-light h2,
+.tile-dark h2 {
+    font-family: var(--dm-font-heading);
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.tile-img {
+    max-width: 100%;
+    border: 1px solid gainsboro;
+    box-shadow: 5px 5px 5px lightgray;
+    border-radius: 4px;
+}
+
+.tile-img-sm {
+    max-width: 100%;
+    border: 1px solid gainsboro;
+    box-shadow: 3px 3px 4px lightgray;
+    border-radius: 3px;
+}
+
+/* CTA section */
+.cta-section {
+    background-color: var(--dm-royal-blue);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-family: var(--dm-font-heading);
+    font-weight: 300;
+    color: white;
+}
+
+/* Footer */
+.dm-footer {
+    background-color: var(--dm-dark);
+    padding: 2.5rem 1.25rem;
+    color: gray;
+}
+
+.dm-footer a {
+    color: gray;
+    text-decoration: none;
+}
+
+.dm-footer a:hover {
+    color: white;
+}
+
+.dm-footer .footer-heading {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: #aaa;
+}
+
+.dm-copyright {
+    text-align: center;
+    padding: 1rem 0;
+    color: #888;
+    font-size: 0.85rem;
+    border-top: 1px solid #ddd;
+}
+
+/* Feature grid cards (ENT page) */
+.feature-card {
+    padding: 1.5rem;
+}
+
+.feature-card h5 {
+    font-family: var(--dm-font-heading);
+    font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .hero {
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero-img {
+        margin-top: 1.5rem;
+    }
+    .tile-img {
+        margin-top: 1.5rem;
+    }
+}
